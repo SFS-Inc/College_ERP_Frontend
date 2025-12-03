@@ -20,11 +20,50 @@
             </a>
         </div> 
     </nav>
-    
+
     <div class="py-4">
 
+        <div class="row align-items-end mb-5">
+            <div class="col-md-8">
+                <h1 class="display-6 text-dark">Faculty Dashboard</h1>
+                <p class="text-muted">Manage yout things bruh</p>
+            </div>
+            <div class="col-md-4  text-md-end">
+                <div class="badge bg-white border shadow-lg p-2">
+                    <span class="text-primary fw-bold">current session: Jan-June 2026</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="card border-1 shadow-lg mb-5">
+            <div class="card-header bg-white border-1 pt-4 ps-4">
+                <h5 class="fw-bold text-secondary mb-0">Recently Updated</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-0">
+                    something
+                    <div class="col-md-3 border-end text-center p-3">
+                        <h2 class="fw-bold text-dark mb-1">stat.total_hours  Hrs</h2>
+                        <p class="text-uppercase text-secondary fw-bold small mb-1" style="font-size: 0.75rem;">
+                            stat.subject__name
+                        </p>
+                        <p class="text-muted small mb-0" style="font-size: 0.7rem;">
+                            {{ stat.batch__name }} ({{ stat.batch__semester__name }})
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+
+
+
+    
     <footer class="bg-white border-top py-4 text-center text-muted mt-auto">
         <div class="container">
             <small>&copy; 2025 Team NASA in  Minecraft.</small>
