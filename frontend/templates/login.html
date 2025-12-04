@@ -3,9 +3,47 @@
 {% block title %}Login - College ERP{% endblock %}
 
 {% block content %}
-<h2>Login</h2>
-<form>
-    ...
-</form>
+<div class="row justify-content-center w-100 my-auto">
+    <div class="row justify-content-center w-100 auto">
+        <div class="col-md-5 col-lg-4">
+            <div class="card shadow-lg border-1 rounded-4 p-3">
+                <div class="card-body">
+                    <h2 class="text-center text-dark fw-light">
+                        Faculty Dashboard
+                    </h2>
+                    {% if form.errors %}
+                    <div class="alert">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Invalid Useranme or Password
+                    </div>
+                    {% endif %}
+                    <form method="post">
+                        {% csrf_token %}
 
+                        <div class="mb-4">\
+                            <label for="id_username" class="form-label text-secondary small ps-3 mb-1">
+                                Enter your Username:
+                            </label>
+                            <input type="text" name="username"  class="form-control form-control-lg rounded-pill border px-4 fs-6 shadow-sm bg-white" placeholder="Username" required id="id_username">
+                        </div>
+
+                        <div class="mb-5">
+                            <label id="id-password" class="form-label text-secondary small ps-3 mb-1">
+                                Enter your Password:
+                            </label>
+                            <input type="text" name="password" class="form-control form-control-lg rounded-pill border px-4 fs-6 shadow-sm bg-white" placeholder="Password" required id="id_password">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill py-2 shadow-lg" style="background-color: #007bff; border: none;">
+                                --_Login_--
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
