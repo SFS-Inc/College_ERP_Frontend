@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="display-6 fw-bold text-dark mb-2">Admin Dashboard</h1>
+    <p class="text-muted mb-4">Manage the ERP system</p>
+
+    <div class="row g-4">
+
+        <!-- Manage Faculties -->
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center p-4">
+                    <div class="display-5 text-primary mb-3">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h5 class="fw-bold">Manage Faculties</h5>
+                    <p class="small text-muted">Create / Edit / Assign Subjects</p>
+                    <a href="#" class="btn btn-primary w-100">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Approve Subjects -->
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center p-4">
+                    <div class="display-5 text-warning mb-3">
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+                    <h5 class="fw-bold">Approval Requests</h5>
+                    <p class="small text-muted">Approve subjects, chapters, topics</p>
+                    <a href="#" class="btn btn-warning text-white w-100">Review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reports -->
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center p-4">
+                    <div class="display-5 text-success mb-3">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h5 class="fw-bold">Reports</h5>
+                    <p class="small text-muted">View full college reports</p>
+                    <a href="#" class="btn btn-success w-100">View</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel Upload -->
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center p-4">
+                    <div class="display-5 text-info mb-3">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h5 class="fw-bold">Import Data</h5>
+                    <p class="small text-muted">Upload subject/chapter/topic Excel files</p>
+                    <a href="#" class="btn btn-info text-white w-100">Upload</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
